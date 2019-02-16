@@ -17,7 +17,7 @@
 					| Me encanta hacer deporte, leer, y pilotar drones. Autodidacta 100%.
 				.button-container
 					a.g-button( v-scroll-to="'#contact_container'"  href="#") Contáctame
-					a.g-button.rounded(href="#") Descarga mi CV
+					a.g-button.rounded(  target="_blank" href="https://www.dropbox.com/s/xgpsnhblttne5s7/cv_Paulo_Tejada.pdf?dl=0") Descarga mi CV
 		.portfolio_container
 			li(v-for="logo in LogoWorks")
 		.work_container.section_container
