@@ -15,5 +15,8 @@
     "vue-scrollto": "^2.13.0",
     "vuetify": "^1.5.1",
     "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }

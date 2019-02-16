@@ -23,6 +23,8 @@ export default {
 }
 </script>
 <style lang="sass">
+.work_options
+    margin-bottom: 0
 .love_work-item
     display: flex
     justify-content: center
@@ -31,8 +33,8 @@ export default {
     align-items: center
     h4
         color: #fff
-        font-weight: 400px
         font-size: 16px
+        margin: 0
     img
         margin-bottom: 25px
     p

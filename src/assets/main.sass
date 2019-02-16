@@ -1,5 +1,5 @@
 body
-    font-family: 'Raleway', sans-serif
+    // font-family: 'Raleway', sans-serif
     ::placeholder
         color: #a469bd
         font-size: 14px
@@ -8,6 +8,8 @@ i
         font-family: "untitled-font-2"
 li
     list-style: none
+ul
+    margin-bottom: 0
 .yellow_icon
     color: #f8c740
 .green_icon
@@ -38,11 +40,11 @@ li
         color: #f1c40f
 .personal_description
     margin-bottom: 90px
-    font-family: 'Raleway', sans-serif
     font-weight: 100
     font-size: 16px
     line-height: 25px
     color: #34495e
+    margin-top:  0
     span
         font-weight: 700
 .button-container
@@ -118,6 +120,7 @@ li
     font-weight: normal
     margin-bottom: 40px
     margin-top: 0
+    // font-family: 'Raleway', sans-serif
     &.purple
             color:  #a469bd
     &.green
@@ -798,6 +801,16 @@ li
         font-size: 13px
         margin-top: 10px
         display: block
+@media (max-width: 1180px)
+    .process_work
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 50px
+        img
+            margin-bottom: 20px
+            max-width: 100%
+            height: auto
+            display: block
 @media (max-width: 1024px)
     .triangle_decoration:after,
     .triangle_decoration:before
@@ -835,14 +848,7 @@ li
         width: 50%
         &:last-child
                 margin-bottom: 0
-    .process_work
-        flex-wrap: wrap
-        justify-content: center
-        img
-            margin-bottom: 20px
-            max-width: 100%
-            height: auto
-            display: block
+
     .process_work li
         width: 33.33%
         margin-bottom: 50px
