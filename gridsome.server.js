@@ -11,7 +11,7 @@ module.exports = function (api) {
     if (isServer) {
       config.externals([
         nodeExternals({
-          whitelist: [/^vuetify/]
+          whitelist: [/^vue-scrollto/]
         })
       ])
     }

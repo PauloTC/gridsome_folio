@@ -1,20 +1,12 @@
 <template lang="pug">
-  v-app
-    v-toolbar
-      v-toolbar-title Gridsome
-      v-spacer
-      v-toolbar-items
-        v-btn(flat exact :to="{ name: 'home' }") Home
-        v-btn(flat :to="{ name: 'about' }") About
-
-    v-container
-      slot
+	div
+		slot
 </template>
 
 <static-query>
 query {
   metaData {
-    siteName
+	siteName
   }
 }
 </static-query>

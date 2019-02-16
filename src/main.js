@@ -1,12 +1,18 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import Vuetify from 'vuetify'
+import VueScrollTo from 'vue-scrollto'
 import DefaultLayout from '~/layouts/Default.vue'
+import '~/assets/main.sass'
 
-import 'vuetify/dist/vuetify.min.css'
+// import 'vuetify/dist/vuetify.min.css'
 
-export default function (Vue) {
-  Vue.use(Vuetify)
+export default function (Vue, {head}) {
+  Vue.use(VueScrollTo)
   Vue.component('Layout', DefaultLayout)
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://file.myfontastic.com/iREo9iNeVTNDA33YjztTjn/icons.css'
+  })
 }
