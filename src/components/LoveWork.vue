@@ -9,13 +9,7 @@ export default {
     props: {
         work: Object
     },
-    methods: {
-
-    },
     computed: {
-        buildimage(){
-            return '../static/img/' + this.work.img + '.png'
-        },
         widthimg(){
             return this.work.width
         }   
