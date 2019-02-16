@@ -388,7 +388,7 @@ ul
             .exprience_icon
                 background: #f1c40f
             .experience_title
-                min-width:  185px !important
+                min-width:  150px !important
             .experience_title
                 background: #f1c40f
                 &:before
@@ -811,6 +811,7 @@ ul
         transition: all 0.25s 
         display: flex
         align-items: center
+        justify-content: center
         &:hover
                 color: #21ac97
     li
@@ -980,6 +981,9 @@ ul
         display: none
     .experience_item-container
         width: 95%
+    .experience_title
+        &:before
+                display: none !important
     .experience_list:nth-child(odd) .experience_title
         left: 0
         right: 0
