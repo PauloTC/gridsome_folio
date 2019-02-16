@@ -830,6 +830,7 @@ ul
         justify-content: center
         margin-bottom: 50px
         max-width: auto
+        padding-right: 0
         img
             margin-bottom: 20px
             max-width: 100%
@@ -942,7 +943,7 @@ ul
     .social_container li
         width: 15%
     .social_container
-        height: 200px
+        height: auto
 @media (max-width: 560px)
         .portfolio_container li
             width: 100%
@@ -1017,6 +1018,12 @@ ul
                     margin-bottom: 20px
     .love_work-item
         width: 100%
+    .contact_info
+        flex-direction: column
+        align-items: center
+        li
+            &:last-child
+                    margin-bottom: 0
     // .personal_description
     //     br
     //         display: none
