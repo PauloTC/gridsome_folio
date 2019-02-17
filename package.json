@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-datocms": "0.0.2",
     "gridsome": "^0.4.0",
     "node-sass": "^4.11.0",
     "pug": "^2.0.3",

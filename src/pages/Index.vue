@@ -1,15 +1,14 @@
 <template lang="pug" >
 	div
-		section.container
+		section.container 
 			.presentation_container
 				h3.top-title 
 					span.green Diseño. 
 					span.red Código. 
-					//- <br>
 					span.purple Música. 
 					span.yellow Café.
 				p.personal_description Hola.. Mi nombre es  
-					span Paulo Tejada. 
+					span {{ $page.allDatoCmsPortafolio.edges[0].node.name }} 
 					| Tengo tres años de experiencia en 
 					span Desarrollo Web 
 					| y 
@@ -90,11 +89,11 @@
 				span.decoration_lines
 			p Me esfuerzo en cada proyecto para cumplir con las expectativas de mis clientes, y sus comentarios positivos son solo la recompensa al trabajo realizado.
 			ul.client_list
-				li.client_user( v-for="client in clients" )
+				li.client_user( v-for="(client, index) in $page.allDatoCmsClient.edges" :key="index" )
 					.client_coment
-						p {{ client.description }}
-						span {{ client.name }},
-							a(  :href="client.website" )  {{ client.industry }}
+						p {{ client.node.description }}
+						span {{ client.node.name }},
+							a(  :href="client.node.website" )  {{ client.node.industry }}
 					figure.client_image( style=" background-image: url('http://tinyimg.io/i/xXGHDqG.jpg')" )
 		.contact_container.section_container(  id="contact_container" style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
 			h3.general_title.purple    Ponte En Contacto
@@ -130,23 +129,57 @@
 					a( href="https://github.com/PauloTC/portafolio" ) www.portafolio.com
 		.social_container
 			ul
-				li
-					a(target="_blank" href="https://twitter.com/")
-						i.icon-twitter
-				li
-					a(  target="_blank" href="https://www.facebook.com/paulo.tejada.7")
-						i.icon-facebook
-				li
-					a(target="_blank" href="https://plus.google.com/u/0/112771440529948303267?tab=mX")
-						i.icon-gplus
-				li
-					a(target="_blank" href="https://www.linkedin.com/in/paulotejadacasas/")
-						i.icon-linkedin
-				li
-					a(target="_blank" href="https://www.instagram.com/nosoypaulo/")
-						i.icon-instagrem
-</template>
+				li( v-for="(social, index) in $page.allDatoCmsSocial.edges "   :key="index" )
+					a( :href="social.node.link" )
+						i
 
+				//- li
+				//- 	a(target="_blank" href="https://twitter.com/")
+				//- 		i.icon-twitter
+				//- li
+				//- 	a(  target="_blank" href="https://www.facebook.com/paulo.tejada.7")
+				//- 		i.icon-facebook
+				//- li
+				//- 	a(target="_blank" href="https://plus.google.com/u/0/112771440529948303267?tab=mX")
+				//- 		i.icon-gplus
+				//- li
+				//- 	a(target="_blank" href="https://www.linkedin.com/in/paulotejadacasas/")
+				//- 		i.icon-linkedin
+				//- li
+				//- 	a(target="_blank" href="https://www.instagram.com/nosoypaulo/")
+				//- 		i.icon-instagrem
+</template>
+<page-query>
+{
+    allDatoCmsPortafolio{
+        edges{
+            node{
+                name
+            }
+        }
+    },
+    allDatoCmsClient{
+        edges{
+            node{
+                name
+                image{
+                    url
+                }
+                description
+                website
+                industry
+            }
+        }
+    },
+    allDatoCmsSocial{
+        edges{
+            node{
+                link
+            }
+        }
+    }
+}
+</page-query>
 <script>
 import LoveWork from '~/components/LoveWork.vue'
 export default {
@@ -417,22 +450,6 @@ export default {
                     description: "Develop web applications using frontend frameworks like Element, Vuetify, Vuelidate, Nuxt.",
                     stack: "",
                     type: "workshop"
-                }
-            ],
-            clients: [
-                {
-                    description: "Hasta ahora muy bueno. muy paciente y servicial Tiene muchas buenas ideas y hace las preguntas correctas.",
-                    name: "Marcio Lizarbe",
-                    website: "http://www.villaforestales.com",
-                    industry: 'Villa Forestales',
-                    img: "http://tinyimg.io/i/xXGHDqG.jpg"
-                },
-                {
-                    description: "Todo muy bien.. el trabajo quedo perfecto. Estamos muy satisfechos. Seguro seguiremos trabajando con él.",
-                    name: "StaffCreativa",
-                    website: "https://www.britanico.edu.pe/",
-                    industry: 'Britanico',
-                    mg: "http://tinyimg.io/i/ALPq76x.jpg"
                 }
             ]
         }
