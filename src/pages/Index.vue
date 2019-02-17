@@ -80,7 +80,7 @@
 					.experience_description
 						p {{ experience.description }}
 			.experience-laptop
-				img( src="http://tinyimg.io/i/USmboMP.png"  alt="laptop" )
+				img( src="https://tinyimg.io/i/USmboMP.png"  alt="laptop" )
 		.clients_container.section_container
 			h3.general_title    Qué Dicen Mis Clientes
 			.g_separator
@@ -94,7 +94,7 @@
 						p {{ client.node.description }}
 						span {{ client.node.name }},
 							a(  :href="client.node.website" )  {{ client.node.industry }}
-					figure.client_image( style=" background-image: url('http://tinyimg.io/i/xXGHDqG.jpg')" )
+					figure.client_image( style=" background-image: url('https://tinyimg.io/i/xXGHDqG.jpg')" )
 		.contact_container.section_container(  id="contact_container" style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
 			h3.general_title.purple    Ponte En Contacto
 			.g_separator
@@ -112,11 +112,11 @@
 					button(  type="submit" ) Enviar Mensaje
 			ul.contact_info
 				li
-					img( src="http://tinyimg.io/i/A0Z6cMu.png"  alt="mail" )
+					img( src="https://tinyimg.io/i/A0Z6cMu.png"  alt="mail" )
 					span info
 					p paulotejada.123a@gmail.com
 				li
-					img( src="http://tinyimg.io/i/JpWvJOC.png"  alt="location" )
+					img( src="https://tinyimg.io/i/JpWvJOC.png"  alt="location" )
 					span DIRECCIÓN
 					p Villa El Salvador, Mz.D lt.43
 				li
@@ -124,7 +124,7 @@
 					span TELÉFONO
 					p (+51) 945-583090
 				li
-					img( src="http://tinyimg.io/i/wu33gik.png"  alt="world" )
+					img( src="https://tinyimg.io/i/wu33gik.png"  alt="world" )
 					span Sitio Web
 					a( href="https://github.com/PauloTC/portafolio" ) www.portafolio.com
 		.social_container
@@ -132,22 +132,6 @@
 				li( v-for="(social, index) in $page.allDatoCmsSocial.edges "   :key="index" )
 					a( :href="social.node.link" )
 						i
-
-				//- li
-				//- 	a(target="_blank" href="https://twitter.com/")
-				//- 		i.icon-twitter
-				//- li
-				//- 	a(  target="_blank" href="https://www.facebook.com/paulo.tejada.7")
-				//- 		i.icon-facebook
-				//- li
-				//- 	a(target="_blank" href="https://plus.google.com/u/0/112771440529948303267?tab=mX")
-				//- 		i.icon-gplus
-				//- li
-				//- 	a(target="_blank" href="https://www.linkedin.com/in/paulotejadacasas/")
-				//- 		i.icon-linkedin
-				//- li
-				//- 	a(target="_blank" href="https://www.instagram.com/nosoypaulo/")
-				//- 		i.icon-instagrem
 </template>
 <page-query>
 {
@@ -190,16 +174,16 @@ export default {
         return{
             LogoWorks:[
                 {
-                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                    img: "https://tinyimg.io/i/Lc1NNkM.jpg"
                 },
                 {
-                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                    img: "https://tinyimg.io/i/Lc1NNkM.jpg"
                 },
                 {
-                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                    img: "https://tinyimg.io/i/Lc1NNkM.jpg"
                 },
                 {
-                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                    img: "https://tinyimg.io/i/Lc1NNkM.jpg"
                 }
             ],
             LoveWorks: [
@@ -261,7 +245,7 @@ export default {
                             color: "d56130"
                         }
                     ],
-                    img:"http://tinyimg.io/i/QmwlHdG.png"
+                    img:"https://tinyimg.io/i/QmwlHdG.png"
                 },
                 // {
                 //     title: "Mobile App Development",
@@ -289,7 +273,7 @@ export default {
                 //             color: "2867ac"
                 //         }
                 //     ],
-                //     img: "http://tinyimg.io/i/RPE4wcz.png"
+                //     img: "https://tinyimg.io/i/RPE4wcz.png"
                 // },
                 {
                     title: "Diseño De Sitios Web",
@@ -317,7 +301,7 @@ export default {
                             color: "409226"
                         }
                     ],
-                    img: "http://tinyimg.io/i/hZUBRFV.png"
+                    img: "https://tinyimg.io/i/hZUBRFV.png"
                 }
             ],
             HowWorks: [
