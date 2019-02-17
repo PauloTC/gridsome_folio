@@ -668,6 +668,8 @@ ul
     > p
             color:  #fff
             margin-bottom:  65px
+.client_image
+    margin: 0
 .client_user
     display: flex
     .client_coment
@@ -684,13 +686,13 @@ ul
         a
             text-decoration: none
             color: #1abc9c
-    &:nth-child(2)
-            .client_image
-                background-image: url('http://tinyimg.io/i/ymWE4L1.png')  !important
+    // &:nth-child(2)
+    //         .client_image
+    //             background-image: url('http://tinyimg.io/i/ymWE4L1.png')  !important
     &:nth-child(even)
             padding-left: 20px
             flex-direction: row-reverse
-            .client_image
+            img
                 border-top-right-radius: 0px
                 border-bottom-left-radius: 0px
                 border-top-left-radius: 20px
@@ -701,14 +703,16 @@ ul
                     text-align:  left
                 span
                     text-align:  left
-.client_image
-    width:  140px
-    height: 140px
-    background-size: cover
-    background-position: center
-    border-top-right-radius: 20px
-    border-bottom-left-radius: 20px
-    margin: 0
+    img
+        width:  140px
+        height: 140px
+        background-size: cover
+        background-position: center
+        border-top-right-radius: 20px
+        border-bottom-left-radius: 20px
+        margin: 0
+        display: block
+        max-width: auto
 .client_list
     display:  flex
 .client_coment
@@ -722,6 +726,8 @@ ul
         font-weight: 300
         font-style: italic
         color: #fff
+    span
+        font-family: 'Raleway', sans-serif
 .contact_form
     display: flex
     margin-top: 65px
@@ -1026,8 +1032,8 @@ ul
         padding-left: 15px !important
         padding-right: 15px
     .top-title
-        font-size: 65px
-        line-height: 70px
+        font-size: 55px
+        line-height: 60px
     .presentation_container
         min-height: 100%
         padding:  80px 0px
