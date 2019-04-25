@@ -176,7 +176,7 @@ export default {
 		return{
 			LogoWorks:[
 				{
-					img: "https://tinyimg.io/i/Lc1NNkM.jpg"
+					img: "http://tinyimg.io/i/ldscpuy.png"
 				},
 				{
 					img: "https://tinyimg.io/i/Lc1NNkM.jpg"
