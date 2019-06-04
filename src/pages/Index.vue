@@ -11,13 +11,20 @@
 				p.personal_description Hola.. Mi nombre es  
 					span {{ $page.allDatoCmsPortafolio.edges[0].node.name }} 
 					| Tengo tres años de experiencia en 
-					span Desarrollo Web 
-					| y 
-					span UIX Designer.  <br/> 
-					| Me encanta hacer deporte, leer, y pilotar drones. Autodidacta 100%.
+					span Desarrollo Web & Web Apps <br/> 
+					| Me encanta hacer deporte, leer, y pilotar drones. Autodidacta 100%. <br/>
+					<br/>
+					| Actualmente poseo conocimientos en las principales tecnologías para el desarrollo frontend tales como <br/>
+					span Vue (Vuex, Nuxt) ,  Angular  8 y GraphlQl. 
+					| (Estoy tomando clases de React en Udemy &#129299) <br/>
+					| Tambien cuento con amplia experiencia en  JQuery , CSS ( Stylus , Sass) , HTML (Pug) y JS (Vanilla & ES6) <br/>
+					<br/>
+					| Cuando se trata de backend para mis proyectos uso <span>Firebase , DatoCMS , SQLite </span>  <br/>  o alguna librería interesante que me proponga aprender.
+					<br/>
+					| Todo lo que he aprendido ha sido de forma autodidacta , tomando cursos online (Udemy, WesBoss , <br/> VueSchool, Coursera, Platzi , EDTeam) , leyendo artículos, libros y practicando mucho.			
 				.button-container
 					a.g-button( v-scroll-to="'#contact_container'"  href="#") Contáctame
-					a.g-button.rounded(  target="_blank" href="https://www.dropbox.com/s/xgpsnhblttne5s7/cv_Paulo_Tejada.pdf?dl=0") Descarga mi CV
+					a.g-button.rounded(  target="_blank" href="https://www.dropbox.com/s/m7pwbutn5n1ufts/CV_Paulo_Tejada_Casas.pdf?dl=0") Descarga mi CV
 		.portfolio_container
 			li(v-for="logo in LogoWorks")
 		.work_container.section_container
