@@ -24,7 +24,7 @@
 					| Todo lo que he aprendido ha sido de forma autodidacta , tomando cursos online (Udemy, WesBoss , <br/> VueSchool, Coursera, Platzi , EDTeam) , leyendo artículos, libros y practicando mucho.			
 				.button-container
 					a.g-button( v-scroll-to="'#contact_container'"  href="#") Contáctame
-					a.g-button.rounded(  target="_blank" href="https://www.dropbox.com/s/m7pwbutn5n1ufts/CV_Paulo_Tejada_Casas.pdf?dl=0") Descarga mi CV
+					a.g-button.rounded(  target="_blank" href="") Descarga mi CV
 		.portfolio_container
 			li(v-for="logo in LogoWorks")
 		.work_container.section_container
